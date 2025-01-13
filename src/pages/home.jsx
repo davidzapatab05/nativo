@@ -1,4 +1,5 @@
 import React from "react";
+import { CarouselDefault } from "../components/carousel";
 import {
   Card,
   CardBody,
@@ -29,7 +30,7 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                NATIVO CONSTRUCTORA
+                NATIVO CONSTRUCTORA S.A.S
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
                 Inspirados por la tierra, construyendo espacios que reflejan tu identidad campestre!
@@ -53,6 +54,10 @@ export function Home() {
               />
             ))}
           </div>
+          {/* <div className="px-56">
+            <CarouselDefault/>
+          </div> */}
+            
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
@@ -77,8 +82,8 @@ export function Home() {
               </Typography>
               <Button variant="filled">read more</Button>
             </div>
-            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
+            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
+              {/* <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
@@ -101,7 +106,8 @@ export function Home() {
                     continue whatever happens.
                   </Typography>
                 </CardBody>
-              </Card>
+              </Card> */}
+              <CarouselDefault/>
             </div>
           </div>
         </div>
