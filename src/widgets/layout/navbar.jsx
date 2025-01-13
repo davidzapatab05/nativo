@@ -5,12 +5,11 @@ import {
   Navbar as MTNavbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export function Navbar({ brandName, routes, action }) {
+export function Navbar({ brandName, routes }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -83,10 +82,13 @@ export function Navbar({ brandName, routes, action }) {
           )}
         </IconButton>
       </div>
+
+      {/* Agregando navList en MobileNav */}
       <MobileNav
         className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
         open={openNav}
       >
+        {navList}
       </MobileNav>
     </MTNavbar>
   );
@@ -94,19 +96,11 @@ export function Navbar({ brandName, routes, action }) {
 
 Navbar.defaultProps = {
   brandName: "NATIVO",
-  action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
-    </a>
-  ),
 };
 
 Navbar.propTypes = {
   brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  action: PropTypes.node,
 };
 
 Navbar.displayName = "/src/widgets/layout/navbar.jsx";
