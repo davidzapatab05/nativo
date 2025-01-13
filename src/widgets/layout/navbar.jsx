@@ -27,7 +27,7 @@ export function Navbar({ brandName, routes }) {
           as="li"
           variant="small"
           color="inherit"
-          className="capitalize"
+          className="capitalize whitespace-nowrap overflow-hidden text-center"
         >
           {href ? (
             <a
