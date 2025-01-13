@@ -180,15 +180,34 @@ export function Home() {
           </PageTitle>
           <form className="mx-auto w-full mt-12 max-w-md lg:max-w-lg">
             <div className="mb-8 flex flex-col gap-6 sm:flex-row">
-              <Input variant="outlined" size="lg" label="Nombre Completo" className="w-full" />
-              <Input variant="outlined" size="lg" label="Dirección de Correo Electrónico" className="w-full" />
+            <label htmlFor="name" className="sr-only">Nombre Completo</label>
+            <Input
+              id="name"
+              variant="outlined"
+              size="lg"
+              label="Nombre Completo"
+              className="w-full"
+              aria-labelledby="name"
+            />
+              <label htmlFor="email" className="sr-only">Dirección de Correo Electrónico</label>
+              <Input
+                id="email"
+                variant="outlined"
+                size="lg"
+                label="Dirección de Correo Electrónico"
+                className="w-full"
+                aria-labelledby="email"
+              />
             </div>
+            <label htmlFor="message" className="sr-only">Mensaje</label>
             <Textarea
+              id="message"
               variant="outlined"
               size="lg"
               label="Mensaje"
               rows={8}
               className="w-full"
+              aria-labelledby="message"
             />
             <Button variant="gradient" size="lg" className="mt-8 w-full">
               Enviar Mensaje
