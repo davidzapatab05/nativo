@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {
   Navbar as MTNavbar,
-  MobileNav,
+  Collapse,
   Typography,
   IconButton,
 } from "@material-tailwind/react";
@@ -62,8 +62,8 @@ export function Navbar({ brandName, routes }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <Link to="/" className="flex items-center ">
-          <img src="/img/logo-icono.webp" alt="logo" width={"10%"}/>
+        <Link to="/" className="flex items-center">
+          <img src="/img/logo-icono.webp" alt="logo" width={"10%"} />
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
             {brandName}
           </Typography>
@@ -85,13 +85,12 @@ export function Navbar({ brandName, routes }) {
         </IconButton>
       </div>
 
-      {/* Agregando navList en MobileNav */}
-      <MobileNav
-        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
-        open={openNav}
-      >
-        {navList}
-      </MobileNav>
+      {/* Uso de Collapse en lugar de MobileNav */}
+      <Collapse open={openNav}>
+        <div className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900">
+          {navList}
+        </div>
+      </Collapse>
     </MTNavbar>
   );
 }

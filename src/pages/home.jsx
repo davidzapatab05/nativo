@@ -94,8 +94,7 @@ export function Home() {
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
                 Coordinar, supervisar y ejecutar proyectos de construcción que satisfagan por completo las necesidades de los clientes, con mano de obra experta y cualificada, y las herramientas óptimas para ofrecer un resultado de calidad, con respeto y cuidado del medio ambiente.
-                <br />
-                <br />
+              </Typography>
               <Typography
                 variant="h2"
                 className="mb-3 font-bold"
@@ -103,8 +102,10 @@ export function Home() {
               >
                 Vision
               </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
                 Ser la empresa constructora líder en la región norte del Perú contribuyendo de manera activa al crecimiento de la región, y ofreciendo como resultado obras reconocidas por su calidad y belleza.
               </Typography>
+
               <Button variant="filled" aria-label="Descargar el brochure informativo de la empresa">Descargar Brochure</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
