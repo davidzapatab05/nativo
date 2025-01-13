@@ -2,7 +2,7 @@ export const teamData = [
   {
     img: "/img/ing2.webp",
     name: "Roman Hadid",
-    position: "Ingeniero 2",
+    position: "Ingeniero 1",
     socials: [
       {
         color: "light-blue",
@@ -21,7 +21,7 @@ export const teamData = [
   {
     img: "/img/ing1.webp",
     name: "Ryan Tompson",
-    position: "Ingeniero 1",
+    position: "Ingeniero 2",
     socials: [
       {
         color: "light-blue",
@@ -58,7 +58,7 @@ export const teamData = [
   },
   {
     img: "/img/ing4.webp",
-    name: "Jenna Kardi",
+    name: "John Kardi",
     position: "Founder and CEO",
     socials: [
       {

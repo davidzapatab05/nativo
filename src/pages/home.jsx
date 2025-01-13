@@ -86,7 +86,7 @@ export function Home() {
                 <FingerPrintIcon className="h-8 w-8 text-white " />
               </div> */}
               <Typography
-                variant="h3"
+                variant="h2"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
@@ -97,7 +97,7 @@ export function Home() {
                 <br />
                 <br />
               <Typography
-                variant="h3"
+                variant="h2"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
@@ -129,7 +129,7 @@ export function Home() {
                 // socials={
                 //   <div className="flex items-center gap-2">
                 //     {socials.map(({ color, name }) => (
-                //       <IconButton key={name} color={color} variant="text">
+                //       <IconButton key={name} color={color} variant="text" aria-label="prueba">
                 //         <i className={`fa-brands text-xl fa-${name}`} />
                 //       </IconButton>
                 //     ))}
@@ -163,7 +163,7 @@ export function Home() {
                     className: "w-5 h-5 text-white",
                   })}
                 </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h4" color="blue-gray" className="mb-2">
                   {title}
                 </Typography>
                 <Typography className="font-normal text-blue-gray-500">
