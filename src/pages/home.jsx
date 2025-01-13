@@ -4,11 +4,11 @@ import {
   Card,
   Typography,
   Button,
-  IconButton,
+  // IconButton,
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
+// import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
@@ -17,7 +17,7 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background.jpg')] bg-cover bg-center"></div>
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background.webp')] bg-cover bg-center"></div>
         <div className="absolute top-0 h-full w-full bg-black/60"></div>
         <div className="container relative mx-auto max-w-7xl px-4">
           <div className="flex flex-wrap items-center">
@@ -105,7 +105,7 @@ export function Home() {
               </Typography>
                 Ser la empresa constructora líder en la región norte del Perú contribuyendo de manera activa al crecimiento de la región, y ofreciendo como resultado obras reconocidas por su calidad y belleza.
               </Typography>
-              <Button variant="filled">Descargar Brochure</Button>
+              <Button variant="filled" aria-label="Descargar el brochure informativo de la empresa">Descargar Brochure</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
               
@@ -209,7 +209,11 @@ export function Home() {
               className="w-full"
               aria-labelledby="message"
             />
-            <Button variant="gradient" size="lg" className="mt-8 w-full">
+            <Button variant="gradient"
+              size="lg"
+              className="mt-8 w-full"
+              aria-label="Enviar mensaje a nuestro equipo"
+            >
               Enviar Mensaje
             </Button>
           </form>

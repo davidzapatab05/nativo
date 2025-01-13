@@ -6,10 +6,10 @@ import {
 
 export const contactData = [
   {
-    title: "Construcción de Calidad",
-    icon: BriefcaseIcon,
+    title: "Proyectos a Tiempo",
+    icon: PlayIcon,
     description:
-      "En Constructora Nativo nos especializamos en entregar proyectos de alta calidad, cumpliendo con los más altos estándares de seguridad y durabilidad.",
+      "Nos comprometemos a entregar cada proyecto en el tiempo estipulado, respetando plazos y garantizando la satisfacción de nuestros clientes.",
   },
   {
     title: "Innovación Sostenible",
@@ -18,10 +18,10 @@ export const contactData = [
       "Nuestro enfoque en la sostenibilidad nos permite ofrecer soluciones innovadoras que minimizan el impacto ambiental y optimizan los recursos disponibles.",
   },
   {
-    title: "Proyectos a Tiempo",
-    icon: PlayIcon,
+    title: "Construcción de Calidad",
+    icon: BriefcaseIcon,
     description:
-      "Nos comprometemos a entregar cada proyecto en el tiempo estipulado, respetando plazos y garantizando la satisfacción de nuestros clientes.",
+      "En Constructora Nativo nos especializamos en entregar proyectos de alta calidad, cumpliendo con los más altos estándares de seguridad y durabilidad.",
   },
 ];
 
