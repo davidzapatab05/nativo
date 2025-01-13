@@ -2,14 +2,11 @@ import React from "react";
 import { CarouselDefault } from "../components/carousel";
 import {
   Card,
-  CardBody,
-  CardHeader,
   Typography,
   Button,
   IconButton,
   Input,
   Textarea,
-  Checkbox,
 } from "@material-tailwind/react";
 import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
@@ -51,7 +48,7 @@ export function Home() {
                   <i className="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="https://wa.me/51961183012?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20servicios%20de%20Nativo%20Constructora."
+                  href="https://wa.me/51990112065?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20servicios%20de%20Nativo%20Constructora."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white text-white transition hover:bg-white hover:text-black"
@@ -85,27 +82,30 @@ export function Home() {
             
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
                 <FingerPrintIcon className="h-8 w-8 text-white " />
-              </div>
+              </div> */}
               <Typography
                 variant="h3"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                Mision
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                Coordinar, supervisar y ejecutar proyectos de construcción que satisfagan por completo las necesidades de los clientes, con mano de obra experta y cualificada, y las herramientas óptimas para ofrecer un resultado de calidad, con respeto y cuidado del medio ambiente.
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                Vision
               </Typography>
-              <Button variant="filled">read more</Button>
+                Ser la empresa constructora líder en la región norte del Perú contribuyendo de manera activa al crecimiento de la región, y ofreciendo como resultado obras reconocidas por su calidad y belleza.
+              </Typography>
+              <Button variant="filled">Descargar Brochure</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
               {/* <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
@@ -137,12 +137,10 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-20">
         <div className="container mx-auto">
-          <PageTitle section="Our Team" heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle heading="Nuestro Equipo">
+            Nuestro equipo está conformado por profesionales y técnicos que colaboran en el diseño, ejecución y supervisión de proyectos, garantizando calidad y cumplimiento de plazos en cada obra realizada.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -151,27 +149,27 @@ export function Home() {
                 img={img}
                 name={name}
                 position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-xl fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
+                // socials={
+                //   <div className="flex items-center gap-2">
+                //     {socials.map(({ color, name }) => (
+                //       <IconButton key={name} color={color} variant="text">
+                //         <i className={`fa-brands text-xl fa-${name}`} />
+                //       </IconButton>
+                //     ))}
+                //   </div>
+                // }
               />
             ))}
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+      <section className="relative bg-white py-14 px-4">
         <div className="container mx-auto">
           {/* Título principal */}
-          <PageTitle section="Co-Working" heading="Construye algo">
-            Los niveles récord de extensión mínima de hielo marino este año pueden
-            deberse a un bajo nivel de hielo. Según la Administración Nacional
-            Oceánica y Atmosférica, Ted Scambos.
+          <PageTitle heading="Construye algo">
+          En Constructora Nativo, estamos dedicados a transformar espacios con innovación,
+          sostenibilidad y excelencia. Creemos en construir no solo estructuras, sino
+          también confianza y comunidades más fuertes.
           </PageTitle>
 
           {/* Tarjetas con íconos */}

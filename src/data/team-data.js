@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    img: "/img/team-1.jpg",
+    img: "/img/ing1.jpg",
     name: "Ryan Tompson",
-    position: "Web Developer",
+    position: "Ingeniero 1",
     socials: [
       {
         color: "light-blue",
@@ -19,9 +19,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-2.jpg",
-    name: "Romina Hadid",
-    position: "Marketing Specialist",
+    img: "/img/ing2.webp",
+    name: "Roman Hadid",
+    position: "Ingeniero 2",
     socials: [
       {
         color: "light-blue",
@@ -38,9 +38,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-3.jpg",
+    img: "/img/ing3.jpg",
     name: "Alexa Smith",
-    position: "UI/UX Designer",
+    position: "Ingeniera 3",
     socials: [
       {
         color: "light-blue",
@@ -57,7 +57,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-4.png",
+    img: "/img/ing4.jpg",
     name: "Jenna Kardi",
     position: "Founder and CEO",
     socials: [

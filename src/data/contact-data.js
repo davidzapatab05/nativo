@@ -6,22 +6,22 @@ import {
 
 export const contactData = [
   {
-    title: "Excelent Services",
+    title: "Construcción de Calidad",
     icon: BriefcaseIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "En Constructora Nativo nos especializamos en entregar proyectos de alta calidad, cumpliendo con los más altos estándares de seguridad y durabilidad.",
   },
   {
-    title: "Grow Your Market",
+    title: "Innovación Sostenible",
     icon: ChartBarIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Nuestro enfoque en la sostenibilidad nos permite ofrecer soluciones innovadoras que minimizan el impacto ambiental y optimizan los recursos disponibles.",
   },
   {
-    title: "Launch Time",
+    title: "Proyectos a Tiempo",
     icon: PlayIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Nos comprometemos a entregar cada proyecto en el tiempo estipulado, respetando plazos y garantizando la satisfacción de nuestros clientes.",
   },
 ];
 
