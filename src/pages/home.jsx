@@ -20,21 +20,46 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
-        <div className="max-w-8xl container relative mx-auto">
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background.jpg')] bg-cover bg-center"></div>
+        <div className="absolute top-0 h-full w-full bg-black/60"></div>
+        <div className="container relative mx-auto max-w-7xl px-4">
           <div className="flex flex-wrap items-center">
-            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
-              <Typography
-                variant="h1"
-                color="white"
-                className="mb-6 font-black"
-              >
-                NATIVO CONSTRUCTORA S.A.S
+            <div className="w-full px-4 text-center mx-auto">
+              <Typography variant="h1" color="white" className="mb-6 text-3xl font-black sm:text-4xl lg:text-5xl">
+                NATIVO CONSTRUCTORA
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
+              <Typography variant="lead" color="white" className="opacity-80 text-sm sm:text-base lg:text-lg">
                 Inspirados por la tierra, construyendo espacios que reflejan tu identidad campestre!
               </Typography>
+              <div className="mt-8 flex justify-center space-x-4">
+                <a
+                  href="https://www.facebook.com/Nativo.bienesraices.pe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white text-white transition hover:bg-white hover:text-black"
+                  aria-label="Facebook"
+                >
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/constructora__nativo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white text-white transition hover:bg-white hover:text-black"
+                  aria-label="Instagram"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://wa.me/51961183012?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20servicios%20de%20Nativo%20Constructora."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white text-white transition hover:bg-white hover:text-black"
+                  aria-label="WhatsApp"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -142,12 +167,15 @@ export function Home() {
       </section>
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+          {/* Título principal */}
+          <PageTitle section="Co-Working" heading="Construye algo">
+            Los niveles récord de extensión mínima de hielo marino este año pueden
+            deberse a un bajo nivel de hielo. Según la Administración Nacional
+            Oceánica y Atmosférica, Ted Scambos.
           </PageTitle>
-          <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+
+          {/* Tarjetas con íconos */}
+          <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
               <Card
                 key={title}
@@ -169,39 +197,31 @@ export function Home() {
               </Card>
             ))}
           </div>
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+
+          {/* Formulario de contacto */}
+          <PageTitle section="Contáctanos" heading="¿Quieres trabajar con nosotros?">
+            Completa este formulario y nos pondremos en contacto contigo en las
+            próximas 24 horas.
           </PageTitle>
-          <form className="mx-auto w-full mt-12 lg:w-5/12">
-            <div className="mb-8 flex gap-8">
-              <Input variant="outlined" size="lg" label="Full Name" />
-              <Input variant="outlined" size="lg" label="Email Address" />
+          <form className="mx-auto w-full mt-12 max-w-md lg:max-w-lg">
+            <div className="mb-8 flex flex-col gap-6 sm:flex-row">
+              <Input variant="outlined" size="lg" label="Nombre Completo" className="w-full" />
+              <Input variant="outlined" size="lg" label="Dirección de Correo Electrónico" className="w-full" />
             </div>
-            <Textarea variant="outlined" size="lg" label="Message" rows={8} />
-            <Checkbox
-              label={
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center font-normal"
-                >
-                  I agree the
-                  <a
-                    href="#"
-                    className="font-medium transition-colors hover:text-gray-900"
-                  >
-                    &nbsp;Terms and Conditions
-                  </a>
-                </Typography>
-              }
-              containerProps={{ className: "-ml-2.5" }}
+            <Textarea
+              variant="outlined"
+              size="lg"
+              label="Mensaje"
+              rows={8}
+              className="w-full"
             />
-            <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-              Send Message
+            <Button variant="gradient" size="lg" className="mt-8 w-full">
+              Enviar Mensaje
             </Button>
           </form>
         </div>
       </section>
+
       <div className="bg-white">
         <Footer />
       </div>
