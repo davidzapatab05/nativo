@@ -28,7 +28,7 @@ Footer.defaultProps = {
     <>
       © {year} Nativo Constructora -
       <a
-        href="https://www.creative-tim.com?ref=mtk"
+        href="https://www.instagram.com/constructora__nativo/"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
